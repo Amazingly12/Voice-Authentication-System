@@ -1,0 +1,1 @@
+## In this 'recordings' folder whichever '.wav' files you either enroll or verify will be stored. 
