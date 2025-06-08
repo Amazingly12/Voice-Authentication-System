@@ -29,7 +29,7 @@ Whisper adds robustness to transcription across accents and noise.
 
 Clone Project, In bash
 ```
-git clone https://github.com/Amazingly12/Project-VA
+git clone https://github.com/Amazingly12/Voice-Authentication-System
 cd Project-VA
 python m venv .venv
 .venv\Scripts\activate
