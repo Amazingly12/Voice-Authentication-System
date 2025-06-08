@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Editor/IDE files (examples, add more if needed)
+.vscode/
+.idea/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Your specific file
+Status.md
