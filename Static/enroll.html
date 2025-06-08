@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll Student</title>
+    <link rel="stylesheet" href="/Static/style.css">
+    <script defer>
+        // defer se fast load hota hai
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enroll Voice</h1>
+        <form id="enrollForm" enctype="multipart/form-data">
+            <label for="student_name">Name:
+            <input type="text" id="student_name" name="name" required placeholder="Enter Student's Name"></label>
+
+
+            <label for="voice_sample">Upload Voice Sample (.wav):</label>
+            <input type="file" id="voice_sample" name="voice_sample" accept=".wav" required><br>
+
+            <button type="submit">Enroll</button>
+        </form>
+        <p id="status"></p>
+        <a href="/Static/verify.html" class="nav-button">Go to Verification Page</a>
+    </div>
+
+    <script>
+        document.getElementById("enrollForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+
+            const response = await fetch("http://localhost:8000/enroll", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+            document.getElementById("status").textContent = result.message || result.detail || "Enrollment complete.";
+
+        });
+        console.log("Will the Script Load - Script loaded Test!");
+    </script>
+</body>
+</html>

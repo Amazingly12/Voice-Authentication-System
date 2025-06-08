@@ -1,0 +1,79 @@
+/* Center the page content */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the form container */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Input fields and labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+/* Buttons */
+button, .nav-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .nav-button:hover {
+    background-color: #FFCD00;
+    color: black;
+}
+
+/* Link area */
+a {
+    color: goldenrod;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
